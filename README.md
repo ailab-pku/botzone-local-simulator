@@ -1,9 +1,13 @@
 # botzone-local-simulator
-Botzone本地模拟器
+Botzone本地模拟器及对局数据产生器
 
 游戏：黑白棋 (Reversi)、五子棋 (Gomoku)、贪吃蛇 (Snake)、吃豆人 (Pacman)
 
-## Demo
+## 本地模拟器
+
+目录：`botzone-local-simulator/games/`
+
+#### Demo
 
 ```python
 # -*- coding: utf-8 -*-
@@ -31,4 +35,12 @@ if __name__ == "__main__":
         print("WHITE wins")
 
 ```
+
+## 对局数据产生器
+
+目录：`botzone-local-simulator/dataset_generator/`
+
+- `1_download.py`：从Botzone上下载某个游戏的全部数据（log）
+- `2_generator.py`：从下载的数据中筛选出指定bot的对局并生成对局数据
+- `run.sh`：并行生成对局数据
 
